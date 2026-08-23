@@ -1,9 +1,9 @@
 /**
- * Tax rates & limits for FY 2025-26 (AY 2026-27)
- * Sources: incometaxindia.gov.in, ClearTax, Budget 2025
+ * Tax rates & limits for FY 2026-27 (AY 2026-27)
+ * Sources: incometaxindia.gov.in, ClearTax, Budget 2026
  */
-export const ASSESSMENT_YEAR = "AY 2026-27";
-export const FINANCIAL_YEAR = "FY 2025-26";
+export const ASSESSMENT_YEAR = "AY 2027-28";
+export const FINANCIAL_YEAR = "FY 2026-27";
 
 export const CESS_RATE = 0.04;
 
