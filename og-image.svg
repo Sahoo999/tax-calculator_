@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TaxClear Income Tax Calculator">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a524f"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="180" fill="#c47b17" opacity="0.18"/>
+  <circle cx="160" cy="520" r="220" fill="#3dbaad" opacity="0.15"/>
+  <text x="80" y="160" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#f7f4ef">TaxClear</text>
+  <text x="80" y="250" font-family="Arial, sans-serif" font-size="42" font-weight="600" fill="#e8eef7">Income Tax Calculator India</text>
+  <text x="80" y="320" font-family="Arial, sans-serif" font-size="28" fill="#9aa8bc">FY 2025-26 · AY 2026-27 · Old vs New Regime</text>
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="24" fill="#7fd4cb">87A rebate · Surcharge · 4% Cess · HRA · 80C/80D · Senior slabs</text>
+  <rect x="80" y="480" width="280" height="56" rx="28" fill="#3dbaad"/>
+  <text x="220" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0b1220">Free · Instant · Accurate</text>
+</svg>

@@ -1,0 +1,33 @@
+# TaxClear — India Income Tax Calculator
+
+> Free old vs new tax regime calculator for FY 2025-26 (AY 2026-27).
+
+## Summary
+TaxClear helps Indian taxpayers compare liability under the old and new income tax regimes. It includes Section 87A rebate, surcharge, Health & Education Cess (4%), HRA, Chapter VI-A deductions, senior citizen slabs, and support for salaried, pension, and business income.
+
+## Primary URL
+https://newtaxcalculator.vercel.app/
+
+## Key facts (AY 2026-27 / FY 2025-26)
+- New regime is the default.
+- New slabs: 0–4L nil, 4–8L 5%, 8–12L 10%, 12–16L 15%, 16–20L 20%, 20–24L 25%, above 24L 30%.
+- New regime standard deduction (salary/pension): ₹75,000.
+- Section 87A (new): rebate up to ₹60,000 if taxable income ≤ ₹12 lakh (resident).
+- Salaried effectively tax-free up to about ₹12.75 lakh under new regime (std deduction + 87A).
+- Old regime (below 60): 0–2.5L nil, 2.5–5L 5%, 5–10L 20%, above 10L 30%.
+- Old regime senior exemption ₹3L; super senior ₹5L.
+- Old regime standard deduction: ₹50,000; 87A rebate up to ₹12,500 if income ≤ ₹5L.
+- Health & Education Cess: 4% on tax + surcharge (both regimes).
+
+## Features
+- Quick and Detailed calculation modes
+- Old vs new side-by-side comparison
+- HRA, 80C, 80D, NPS, home loan, let-out property
+- Senior / super-senior / NRI handling
+- Light and dark theme
+
+## Author
+Vivek Panchal — https://x.com/Vivekpanchaal
+
+## Official reference
+https://www.incometaxindia.gov.in/w/tax-rates

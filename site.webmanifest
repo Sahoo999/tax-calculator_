@@ -1,0 +1,19 @@
+{
+  "name": "TaxClear — India Income Tax Calculator",
+  "short_name": "TaxClear",
+  "description": "Compare old vs new tax regime for FY 2025-26 (AY 2026-27) with rebate, surcharge and 4% cess.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ef",
+  "theme_color": "#0f6e6a",
+  "lang": "en-IN",
+  "categories": ["finance", "utilities"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Theme boot (prevent flash) -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("taxclear-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.colorScheme = theme;
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <!-- Primary SEO -->
+  <title>Income Tax Calculator India FY 2025-26 | Old vs New Tax Regime AY 2026-27</title>
+  <meta name="title" content="Income Tax Calculator India FY 2025-26 | Old vs New Tax Regime AY 2026-27">
+  <meta name="description" content="Free India income tax calculator for FY 2025-26 (AY 2026-27). Instantly compare old vs new tax regime with Section 87A rebate, 4% cess, surcharge, HRA, 80C, 80D, senior citizen slabs, salaried & business income. Find which regime saves more tax.">
+  <meta name="keywords" content="income tax calculator, income tax calculator india, tax calculator FY 2025-26, old vs new tax regime, new tax regime calculator, old tax regime calculator, AY 2026-27 tax slabs, section 87A rebate, senior citizen tax calculator, HRA calculator, 80C deduction, salaried tax calculator, business income tax calculator, income tax slab 2025, taxClear">
+  <meta name="author" content="Vivek Panchal">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="theme-color" content="#0f6e6a" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="application-name" content="TaxClear Income Tax Calculator">
+  <meta name="apple-mobile-web-app-title" content="TaxClear">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="canonical" href="https://newtaxcalculator.vercel.app/">
+  <link rel="alternate" hreflang="en-IN" href="https://newtaxcalculator.vercel.app/">
+  <link rel="alternate" hreflang="en" href="https://newtaxcalculator.vercel.app/">
+  <link rel="alternate" hreflang="x-default" href="https://newtaxcalculator.vercel.app/">
+  <link rel="sitemap" type="application/xml" href="https://newtaxcalculator.vercel.app/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TaxClear">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://newtaxcalculator.vercel.app/">
+  <meta property="og:title" content="Income Tax Calculator India FY 2025-26 | Old vs New Regime">
+  <meta property="og:description" content="Compare old vs new tax regime with rebate 87A, surcharge, 4% cess, HRA, 80C/80D and senior citizen slabs for AY 2026-27. Free & instant.">
+  <meta property="og:image" content="https://newtaxcalculator.vercel.app/og-image.svg">
+  <meta property="og:image:alt" content="TaxClear India Income Tax Calculator Old vs New Regime">
+  <meta property="og:image:type" content="image/svg+xml">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://newtaxcalculator.vercel.app/">
+  <meta name="twitter:title" content="Income Tax Calculator India FY 2025-26 | Old vs New Regime">
+  <meta name="twitter:description" content="Free old vs new tax regime calculator with cess, surcharge, deductions & senior citizen slabs for AY 2026-27.">
+  <meta name="twitter:image" content="https://newtaxcalculator.vercel.app/og-image.svg">
+  <meta name="twitter:creator" content="@Vivekpanchaal">
+
+  <!-- AI / answer-engine hints -->
+  <meta name="ai-content-declaration" content="human-authored calculator tool with verified FY 2025-26 tax rules">
+  <meta name="subject" content="Indian Income Tax Calculation Old vs New Regime">
+  <meta name="abstract" content="Interactive calculator comparing India's old and new income tax regimes for FY 2025-26 / AY 2026-27 including rebate, surcharge and health & education cess.">
+  <link rel="author" href="https://x.com/Vivekpanchaal">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD: WebApplication + FAQ + HowTo + Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://newtaxcalculator.vercel.app/#website",
+        "url": "https://newtaxcalculator.vercel.app/",
+        "name": "TaxClear",
+        "description": "Free India income tax calculator to compare old vs new tax regime for FY 2025-26 (AY 2026-27).",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://newtaxcalculator.vercel.app/#person" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://newtaxcalculator.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://newtaxcalculator.vercel.app/#app",
+        "name": "TaxClear Income Tax Calculator",
+        "url": "https://newtaxcalculator.vercel.app/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "featureList": [
+          "Old vs new tax regime comparison",
+          "Section 87A rebate and marginal relief",
+          "Health and Education Cess 4%",
+          "Surcharge calculation",
+          "HRA and 80C/80D deductions",
+          "Senior and super senior citizen slabs",
+          "Salaried and business income support"
+        ],
+        "inLanguage": "en-IN",
+        "isAccessibleForFree": true,
+        "creator": { "@id": "https://newtaxcalculator.vercel.app/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://newtaxcalculator.vercel.app/#person",
+        "name": "Vivek Panchal",
+        "url": "https://x.com/Vivekpanchaal",
+        "sameAs": ["https://x.com/Vivekpanchaal"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://newtaxcalculator.vercel.app/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://newtaxcalculator.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Income Tax Calculator FY 2025-26",
+            "item": "https://newtaxcalculator.vercel.app/"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to use the India income tax calculator",
+        "description": "Calculate and compare tax under old and new regimes for FY 2025-26.",
+        "totalTime": "PT2M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Select your profile",
+            "text": "Choose age category, residential status, and income type (salaried, pensioner, business, or mixed)."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Enter income and deductions",
+            "text": "Use Quick mode for a fast estimate or Detailed mode for HRA, 80C, 80D, NPS, and house property."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Compare regimes",
+            "text": "View side-by-side old vs new tax with rebate, surcharge, 4% cess, and a recommended regime."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://newtaxcalculator.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is income up to ₹12 lakh tax-free under the new regime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the new tax regime for FY 2025-26, resident individuals with taxable income up to ₹12 lakh get a Section 87A rebate up to ₹60,000, making tax on normal income zero. With the ₹75,000 standard deduction, salaried income up to ₹12.75 lakh can be effectively tax-free. Special-rate income such as certain capital gains is excluded from this rebate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do senior citizens get higher tax slabs in the new regime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The new tax regime uses the same slabs for all ages. Higher basic exemption limits of ₹3 lakh (senior) and ₹5 lakh (super senior) apply only under the old tax regime for resident individuals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Health and Education Cess on income tax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Health and Education Cess is levied at 4% on income tax plus surcharge under both old and new regimes. TaxClear always includes this cess in the total tax liability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which deductions are allowed in the new tax regime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most Chapter VI-A deductions such as 80C, 80D and HRA are not allowed in the new regime. You can still claim standard deduction of ₹75,000, employer NPS under section 80CCD(2), family pension deduction, and interest on let-out property."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I switch between old and new tax regime every year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you have no income from business or profession, you can choose the regime each year while filing your ITR. If you have business income and opt out of the new regime, switching back is generally restricted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the new tax regime slabs for FY 2025-26?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New regime slabs for AY 2026-27: up to ₹4 lakh nil, ₹4–8 lakh 5%, ₹8–12 lakh 10%, ₹12–16 lakh 15%, ₹16–20 lakh 20%, ₹20–24 lakh 25%, above ₹24 lakh 30%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL7QJXELDR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YL7QJXELDR');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#calculator">Skip to calculator</a>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-wrap">
+        <p class="brand">TaxClear</p>
+        <p class="brand-sub">FY 2025-26 · AY 2026-27</p>
+      </div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-text" id="themeToggleText">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Income Tax Calculator India</h1>
+      <p class="hero-lead">
+        Free <strong>old vs new tax regime</strong> calculator for FY 2025-26 (AY 2026-27) —
+        with rebate, surcharge, and 4% cess for salaried, business, and senior citizens.
+      </p>
+      <p class="hero-meta">
+        Developed by
+        <a href="https://x.com/Vivekpanchaal" class="author-link" target="_blank" rel="noopener noreferrer">Vivek Panchal</a>
+      </p>
+    </section>
+
+    <div class="app-grid" id="calculator">
+      <section class="panel form-panel" aria-labelledby="inputs-heading">
+        <div class="panel-head">
+          <h2 id="inputs-heading">Your details</h2>
+          <div class="mode-switch" role="group" aria-label="Calculator mode">
+            <button type="button" class="mode-btn is-active" data-mode="quick" id="modeQuick">Quick</button>
+            <button type="button" class="mode-btn" data-mode="detailed" id="modeDetailed">Detailed</button>
+          </div>
+        </div>
+
+        <form id="taxForm" novalidate>
+          <fieldset class="field-block">
+            <legend>Profile</legend>
+            <div class="field-row">
+              <label for="ageCategory">Age category</label>
+              <select id="ageCategory" name="ageCategory">
+                <option value="below60">Below 60 years</option>
+                <option value="senior">Senior (60–79)</option>
+                <option value="superSenior">Super senior (80+)</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <label for="residentialStatus">Residential status</label>
+              <select id="residentialStatus" name="residentialStatus">
+                <option value="resident">Resident</option>
+                <option value="nri">NRI</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <label for="incomeType">Primary income</label>
+              <select id="incomeType" name="incomeType">
+                <option value="salaried">Salaried</option>
+                <option value="pensioner">Pensioner</option>
+                <option value="business">Business / Profession</option>
+                <option value="mixed">Mixed</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="samples" aria-label="Sample profiles">
+            <span class="samples-label">Try a sample:</span>
+            <button type="button" class="chip" data-sample="salariedMetro">Salaried metro</button>
+            <button type="button" class="chip" data-sample="seniorPensioner">Senior pensioner</button>
+            <button type="button" class="chip" data-sample="business44ada">Business 44ADA</button>
+          </div>
+
+          <div id="quickSection" class="mode-section">
+            <fieldset class="field-block">
+              <legend>Income</legend>
+              <div class="field-row">
+                <label for="quickIncome">Gross annual income</label>
+                <div class="input-rupee">
+                  <span>₹</span>
+                  <input type="number" id="quickIncome" name="quickIncome" min="0" step="1000" placeholder="e.g. 1200000" value="1200000" inputmode="numeric">
+                </div>
+              </div>
+              <div class="field-row check-row">
+                <label class="check-label">
+                  <input type="checkbox" id="quickHasSalary" name="quickHasSalary" checked>
+                  Includes salary / pension (apply standard deduction)
+                </label>
+              </div>
+              <div class="field-row">
+                <label for="quickOldDeductions">
+                  Estimated old-regime deductions
+                  <span class="hint">80C, 80D, HRA, home loan, etc.</span>
+                </label>
+                <div class="input-rupee">
+                  <span>₹</span>
+                  <input type="number" id="quickOldDeductions" name="quickOldDeductions" min="0" step="1000" placeholder="e.g. 200000" value="150000" inputmode="numeric">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="detailedSection" class="mode-section is-hidden">
+            <details class="accordion" open>
+              <summary>Income</summary>
+              <div class="accordion-body">
+                <div class="field-row" data-show-for="salaried mixed">
+                  <label for="salary">Gross salary (annual)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="salary" name="salary" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row" data-show-for="salaried mixed">
+                  <label for="basicDA">Basic + DA (for HRA / NPS)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="basicDA" name="basicDA" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row" data-show-for="pensioner mixed">
+                  <label for="pension">Pension (annual)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="pension" name="pension" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row" data-show-for="business mixed">
+                  <label for="businessIncome">
+                    Business / profession net income
+                    <span class="hint">Enter net profit after expenses. For presumptive 44AD/44ADA, enter the presumptive income.</span>
+                  </label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="businessIncome" name="businessIncome" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="interestIncome">Interest income</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="interestIncome" name="interestIncome" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="familyPension">Family pension received</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="familyPension" name="familyPension" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="otherIncome">Other income</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="otherIncome" name="otherIncome" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="accordion" open>
+              <summary>Salary exemptions <span class="badge-old">Old regime</span></summary>
+              <div class="accordion-body">
+                <div class="field-row">
+                  <label for="hraReceived">HRA received</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="hraReceived" name="hraReceived" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="rentPaid">Rent paid (annual)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="rentPaid" name="rentPaid" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="cityType">City type (HRA %)</label>
+                  <select id="cityType" name="cityType">
+                    <option value="metro">Metro (50% of Basic+DA)</option>
+                    <option value="nonMetro">Non-metro (40% of Basic+DA)</option>
+                  </select>
+                </div>
+                <div class="field-row">
+                  <label for="ltaExemption">LTA exemption claimed</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="ltaExemption" name="ltaExemption" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row check-row">
+                  <label class="check-label">
+                    <input type="checkbox" id="use80GG" name="use80GG">
+                    No HRA — claim rent under 80GG (old regime)
+                  </label>
+                </div>
+              </div>
+            </details>
+
+            <details class="accordion">
+              <summary>House property</summary>
+              <div class="accordion-body">
+                <div class="field-row">
+                  <label for="selfOccupiedInterest">
+                    Self-occupied home loan interest
+                    <span class="hint">Old regime only · max ₹2,00,000</span>
+                  </label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="selfOccupiedInterest" name="selfOccupiedInterest" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <p class="section-note">Let-out property (both regimes)</p>
+                <div class="field-row">
+                  <label for="letOutRent">Annual rent received</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="letOutRent" name="letOutRent" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="letOutMunicipalTax">Municipal taxes paid</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="letOutMunicipalTax" name="letOutMunicipalTax" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="letOutInterest">Interest on let-out property loan</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="letOutInterest" name="letOutInterest" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="accordion" open>
+              <summary>Deductions</summary>
+              <div class="accordion-body">
+                <div class="field-row check-row">
+                  <label class="check-label">
+                    <input type="checkbox" id="isGovtEmployee" name="isGovtEmployee">
+                    Government employee (NPS employer % for old regime)
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label for="employerNPS">
+                    Employer NPS contribution (80CCD(2))
+                    <span class="hint">Allowed in both regimes · New: 14% of Basic+DA</span>
+                  </label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="employerNPS" name="employerNPS" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+
+                <p class="section-note">Old regime only</p>
+                <div class="field-row">
+                  <label for="section80C">Section 80C (max ₹1.5L)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80C" name="section80C" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="section80CCD1B">Additional NPS 80CCD(1B) (max ₹50k)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80CCD1B" name="section80CCD1B" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="section80DSelf">80D — self &amp; family premium</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80DSelf" name="section80DSelf" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="section80DParents">80D — parents’ premium</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80DParents" name="section80DParents" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row check-row">
+                  <label class="check-label">
+                    <input type="checkbox" id="parentsAreSenior" name="parentsAreSenior">
+                    Parents are senior citizens (higher 80D limit)
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label for="section80E">80E — education loan interest</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80E" name="section80E" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="section80G">80G — donations (eligible amount)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80G" name="section80G" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row" data-senior-hide>
+                  <label for="section80TTA">80TTA — savings interest (max ₹10k)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80TTA" name="section80TTA" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row is-hidden" data-senior-only>
+                  <label for="section80TTB">80TTB — interest (senior, max ₹50k)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="section80TTB" name="section80TTB" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="accordion">
+              <summary>Advanced — special rate income</summary>
+              <div class="accordion-body">
+                <p class="section-note">These are taxed separately and excluded from Section 87A rebate.</p>
+                <div class="field-row">
+                  <label for="stcg111A">STCG u/s 111A (equity)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="stcg111A" name="stcg111A" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="ltcg112A">LTCG u/s 112A (equity, before ₹1.25L exemption)</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="ltcg112A" name="ltcg112A" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="field-row">
+                  <label for="lotteryIncome">Lottery / gambling winnings</label>
+                  <div class="input-rupee">
+                    <span>₹</span>
+                    <input type="number" id="lotteryIncome" name="lotteryIncome" min="0" step="1000" value="0" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-secondary" id="shareBtn">Copy share link</button>
+            <button type="button" class="btn-secondary" id="printBtn">Print summary</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="panel results-panel" id="resultsPanel" aria-live="polite">
+        <div class="panel-head">
+          <h2>Tax comparison</h2>
+          <p class="results-fy">FY 2025-26 (AY 2026-27)</p>
+        </div>
+
+        <div id="recommendation" class="recommendation"></div>
+
+        <div class="compare-cards" id="compareCards">
+          <article class="tax-card" data-regime="new">
+            <header>
+              <h3>New regime</h3>
+              <span class="pill">Default</span>
+            </header>
+            <p class="tax-total" id="newTotal">₹0</p>
+            <p class="tax-meta" id="newMeta">Effective rate —</p>
+          </article>
+          <article class="tax-card" data-regime="old">
+            <header>
+              <h3>Old regime</h3>
+              <span class="pill pill-muted">Optional</span>
+            </header>
+            <p class="tax-total" id="oldTotal">₹0</p>
+            <p class="tax-meta" id="oldMeta">Effective rate —</p>
+          </article>
+        </div>
+
+        <p class="tip" id="tipText"></p>
+
+        <div class="sticky-mobile-bar" id="mobileBar">
+          <div>
+            <span class="bar-label">Recommended</span>
+            <strong id="mobileRec">—</strong>
+          </div>
+          <div>
+            <span class="bar-label">Tax</span>
+            <strong id="mobileTax">₹0</strong>
+          </div>
+        </div>
+
+        <div class="breakdown-group" id="breakdownGroup">
+          <details class="breakdown-acc accordion" open data-regime="new">
+            <summary>
+              <span class="breakdown-acc-title">New regime breakdown</span>
+              <span class="breakdown-acc-badge pill">Default</span>
+            </summary>
+            <div class="accordion-body breakdown" id="newBreakdown"></div>
+          </details>
+          <details class="breakdown-acc accordion" data-regime="old">
+            <summary>
+              <span class="breakdown-acc-title">Old regime breakdown</span>
+              <span class="breakdown-acc-badge pill pill-muted">Optional</span>
+            </summary>
+            <div class="accordion-body breakdown" id="oldBreakdown"></div>
+          </details>
+        </div>
+
+        <p class="disclaimer">
+          Educational estimate only — not tax advice. Verify with a CA or while filing ITR.
+          Rates aligned with
+          <a href="https://www.incometaxindia.gov.in/w/tax-rates%E2%80%8B" target="_blank" rel="noopener noreferrer">Income Tax India</a>
+          for AY 2026-27.
+        </p>
+      </aside>
+    </div>
+
+    <!-- SEO / AI-readable content -->
+    <section class="content-section" id="tax-slabs" aria-labelledby="slabs-heading">
+      <h2 id="slabs-heading">Income tax slabs FY 2025-26 (AY 2026-27)</h2>
+      <p>
+        Use this free <strong>income tax calculator India</strong> to compare liability under the
+        <strong>new tax regime</strong> (default) and the <strong>old tax regime</strong>.
+        Totals include Section 87A rebate (where eligible), surcharge, and Health &amp; Education Cess at 4%.
+      </p>
+
+      <div class="slab-tables">
+        <div class="slab-table-card">
+          <h3>New tax regime slabs</h3>
+          <table>
+            <thead>
+              <tr><th>Taxable income</th><th>Rate</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Up to ₹4,00,000</td><td>Nil</td></tr>
+              <tr><td>₹4,00,001 – ₹8,00,000</td><td>5%</td></tr>
+              <tr><td>₹8,00,001 – ₹12,00,000</td><td>10%</td></tr>
+              <tr><td>₹12,00,001 – ₹16,00,000</td><td>15%</td></tr>
+              <tr><td>₹16,00,001 – ₹20,00,000</td><td>20%</td></tr>
+              <tr><td>₹20,00,001 – ₹24,00,000</td><td>25%</td></tr>
+              <tr><td>Above ₹24,00,000</td><td>30%</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">Standard deduction ₹75,000 for salary/pension. Rebate u/s 87A up to ₹60,000 if taxable income ≤ ₹12 lakh.</p>
+        </div>
+        <div class="slab-table-card">
+          <h3>Old tax regime slabs (below 60)</h3>
+          <table>
+            <thead>
+              <tr><th>Taxable income</th><th>Rate</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Up to ₹2,50,000</td><td>Nil</td></tr>
+              <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+              <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+              <tr><td>Above ₹10,00,000</td><td>30%</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">Senior (60–79): exemption ₹3 lakh. Super senior (80+): exemption ₹5 lakh. Standard deduction ₹50,000. Rebate u/s 87A up to ₹12,500 if income ≤ ₹5 lakh.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Why use TaxClear?</h2>
+      <ul class="feature-list">
+        <li><strong>Old vs new comparison</strong> — see which regime costs less in seconds</li>
+        <li><strong>Full tax stack</strong> — slabs, 87A rebate, marginal relief, surcharge, 4% cess</li>
+        <li><strong>Salaried tools</strong> — HRA exemption, 80C, 80D, NPS, LTA, home loan interest</li>
+        <li><strong>Senior citizens</strong> — age-based old-regime slabs and 80TTB</li>
+        <li><strong>Business &amp; mixed income</strong> — net PGBP / presumptive income support</li>
+        <li><strong>Private &amp; shareable</strong> — runs in your browser; copy a link to your scenario</li>
+      </ul>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>Is income up to ₹12 lakh really tax-free?</summary>
+        <p>Under the new regime, resident individuals with taxable income up to ₹12 lakh get a Section 87A rebate (up to ₹60,000), so tax on normal income becomes zero. With the ₹75,000 standard deduction, salaried income up to ₹12.75 lakh can be effectively tax-free. Special-rate income (e.g. some capital gains) is excluded from this rebate.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do senior citizens get higher slabs in the new regime?</summary>
+        <p>No. The new regime uses the same slabs for all ages. Higher basic exemption (₹3L / ₹5L) applies only under the old regime for resident senior and super-senior citizens.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is Health &amp; Education Cess?</summary>
+        <p>A 4% cess is levied on income tax plus surcharge under both regimes. This calculator always includes it in the total liability.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which deductions work in the new regime?</summary>
+        <p>Most Chapter VI-A deductions (80C, 80D, HRA, etc.) are not allowed. You can still claim standard deduction (₹75,000), employer NPS under 80CCD(2), family pension deduction, and interest on let-out property.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I switch regimes every year?</summary>
+        <p>If you have no business/profession income, you can choose each year while filing. If you have business income and opt out of the new regime, switching back is restricted (generally once).</p>
+      </details>
+      <details class="faq-item">
+        <summary>What are the new tax regime slabs for FY 2025-26?</summary>
+        <p>Up to ₹4 lakh nil; ₹4–8 lakh 5%; ₹8–12 lakh 10%; ₹12–16 lakh 15%; ₹16–20 lakh 20%; ₹20–24 lakh 25%; above ₹24 lakh 30%. This applies for AY 2026-27.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>TaxClear</strong> — free income tax calculator for India · Old vs New regime · FY 2025-26 (AY 2026-27)</p>
+    <p class="footer-links">
+      <a href="#calculator">Calculator</a> ·
+      <a href="#tax-slabs">Tax slabs</a> ·
+      <a href="#faq">FAQ</a> ·
+      <a href="https://www.incometaxindia.gov.in/w/tax-rates%E2%80%8B" target="_blank" rel="noopener noreferrer">Official tax rates</a>
+    </p>
+  </footer>
+
+  <section class="print-summary" id="printSummary" hidden></section>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
