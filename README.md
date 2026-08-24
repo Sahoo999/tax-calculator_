@@ -1,178 +1,198 @@
-
 <div align="center">
 
-### Smart Indian Income Tax Calculator
+### India Income Tax Calculator — Old vs New Tax Regime
 
-Compare **Old vs New Tax Regimes** and estimate your income tax liability with detailed slab calculations, rebates, surcharge, cess, deductions, HRA, and income-specific rules.
+[![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Logic-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge\&logo=vercel\&logoColor=white)](https://vercel.com/)
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-0f6e6a?style=for-the-badge)](YOUR_VERCEL_URL)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
+*Compare India's old and new tax regimes with detailed deductions, rebates, surcharge, and cess — instantly in your browser.*
+
+[🌐 Live Demo](https://tax-calculator-five-jet.vercel.app/) · [Features](#-key-features) · [Run Locally](#-running-locally)
 
 </div>
 
----
+<br>
 
-## 📌 Overview
+## 🎯 The Problem
 
-**TaxClear** is a client-side Indian income tax calculator designed to help users estimate and compare their tax liability under the **Old and New Tax Regimes**.
+Indian income-tax calculations can quickly become complicated when salary, HRA, deductions, NPS, house property income, senior-citizen rules, and different tax regimes are involved.
 
-The application provides both a quick calculation mode and a detailed mode for users who want to account for deductions and income components such as:
+**TaxClear simplifies that process.**
 
-- Salary / pension income
-- Business / professional income
-- HRA
-- Section 80C
-- Section 80D
-- NPS
-- Home-loan interest
-- Savings interest
-- Family pension
-- Senior-citizen benefits
-- Section 87A rebate
-- Surcharge
-- Health & Education Cess
+Enter your income and deductions, and get a clear **old vs new regime comparison** with the recommended option and complete tax breakdown.
 
-The application is built using **vanilla HTML, CSS and modern JavaScript ES modules**, without requiring a frontend framework.
+<br>
 
----
+## ✨ Key Features
 
-## ✨ Features
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 🧮 Tax Calculation
+### ⚖️ Old vs New Comparison
 
-- Old Regime tax calculation
-- New Regime tax calculation
-- Progressive income-tax slab calculation
-- Automatic taxable-income calculation
-- Standard deduction handling
-- Section 87A rebate
-- Marginal relief
-- Surcharge calculation
-- 4% Health & Education Cess
-- Final tax liability calculation
+Calculate both tax regimes side-by-side and instantly see which option results in lower tax.
 
-### 👤 User Profiles
+</td>
+<td width="50%" valign="top">
 
-Supports different taxpayer profiles including:
+### 🧮 Detailed Tax Calculation
 
-- Below 60 years
-- Senior citizens
-- Super senior citizens
-- Resident taxpayers
-- NRI taxpayers
-- Salaried taxpayers
-- Business / professional income
+Includes tax slabs, Section 87A rebate, surcharge, and **4% Health & Education Cess**.
 
-### 💰 Deductions & Exemptions
+</td>
+</tr>
 
-Detailed calculation support for applicable deductions and exemptions such as:
+<tr>
+<td width="50%" valign="top">
 
-- Section 80C
-- Section 80CCD(1B)
-- Section 80D
-- Section 24(b)
-- Section 80TTA
-- Section 80TTB
-- Section 80GG
-- HRA exemption
-- Employer NPS contribution
-- Family pension deduction
+### 💼 Salary & Business Income
 
-### ⚖️ Regime Comparison
+Supports salaried, pension, business/professional, and mixed-income scenarios.
 
-The calculator compares both regimes and helps users identify:
+</td>
+<td width="50%" valign="top">
 
-> **Which tax regime results in lower tax?**
+### 🏠 HRA & Deductions
 
-The result includes a clear breakdown of:
+Supports HRA, 80C, 80D, NPS, LTA, home-loan interest, 80E, 80G, 80TTA, and 80TTB.
 
-- Gross income
-- Deductions
-- Taxable income
-- Tax before rebate
-- Rebate
-- Surcharge
-- Cess
-- Total tax
+</td>
+</tr>
 
-### 🎯 Quick Calculation
+<tr>
+<td width="50%" valign="top">
 
-Users can enter their annual income and immediately compare the two regimes without filling out every detailed deduction.
+### 👴 Senior Citizens
 
-### 🔍 Detailed Calculation
+Supports below 60, senior citizens, and super-senior citizens with applicable old-regime treatment.
 
-Advanced users can provide individual income and deduction components for a more granular calculation.
+</td>
+<td width="50%" valign="top">
 
-### 🌙 UI Features
+### 📈 Special-Rate Income
 
-- Responsive interface
-- Light / dark mode
-- Quick and detailed modes
-- Sample taxpayer scenarios
-- Accessible form controls
-- Indian currency formatting
-- Mobile-friendly layout
+Handles STCG 111A, LTCG 112A, and lottery/gambling income separately.
 
----
+</td>
+</tr>
+</table>
 
-## 🏗️ Project Structure
+<br>
+
+## 🏗️ How It Works
+
+```mermaid
+flowchart LR
+    A["👤 User Input"] --> B["🧮 Tax Engine"]
+    B --> C["🆕 New Regime"]
+    B --> D["📜 Old Regime"]
+    C --> E["⚖️ Compare"]
+    D --> E
+    E --> F["💡 Recommendation"]
+    E --> G["📊 Breakdown"]
+
+    style A fill:#1a1d2e,stroke:#3a5bf0,color:#fff
+    style B fill:#17261f,stroke:#3dcc7e,color:#fff
+    style E fill:#211a2b,stroke:#a07ee0,color:#fff
+```
+
+<br>
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Layer          | Technology                       |
+| :------------- | :------------------------------- |
+| **Frontend**   | HTML5 · CSS3                     |
+| **Logic**      | Vanilla JavaScript               |
+| **Deployment** | Vercel                           |
+| **SEO**        | Meta Tags · Open Graph · JSON-LD |
+| **Analytics**  | Google Analytics                 |
+| **Assets**     | SVG · Google Fonts               |
+
+</div>
+
+<br>
+
+## 🚀 Running Locally
+
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd <YOUR_REPOSITORY_FOLDER>
+```
+
+Run a local server:
+
+```bash
+python -m http.server 8000
+```
+
+Open:
 
 ```text
-tax-calculator/
-│
-├── index.html                 # Main application interface
-├── styles.css                 # Global styling and responsive design
-├── script.js                  # Application entry point
-│
-├── js/
-│   ├── tax-config.js          # Tax rates, slabs and limits
-│   ├── tax-engine.js          # Core tax calculation engine
-│   ├── tax-engine.test.js     # Automated calculation tests
-│   └── ui.js                  # UI state and interaction logic
-│
-├── favicon.svg                # Browser favicon
-├── og-image.svg               # Social sharing image
-├── site.webmanifest            # Web app metadata
-├── robots.txt                 # Search engine crawling rules
-├── sitemap.xml                # Search engine sitemap
-├── package.json               # npm configuration
-├── package-lock.json          # Dependency lock file
-└── README.md                  # Project documentation
+http://localhost:8000
+```
+
+Or simply open `index.html` directly in your browser.
+
+<br>
+
+## 📁 Project Structure
+
+```text
+├── index.html          # Calculator UI + SEO metadata
+├── styles.css          # Responsive styling + themes
+├── script.js           # Tax calculation engine
+├── favicon.svg         # Favicon
+├── og-image.svg        # Social sharing image
+├── site.webmanifest    # Web app manifest
+└── README.md
+```
+
+<br>
+
+## 💡 Design Decisions Worth Knowing
+
+<details>
+<summary><b>Why compare both regimes?</b></summary>
+<br>
+
+The better regime depends on income, deductions, exemptions, and taxpayer profile. TaxClear calculates both so users can make the comparison immediately instead of doing it manually.
+
+</details>
+
+<details>
+<summary><b>Why Quick and Detailed modes?</b></summary>
+<br>
+
+Quick Mode provides a fast estimate with minimal inputs, while Detailed Mode gives users control over HRA, deductions, NPS, house property, and special-rate income.
+
+</details>
+
+<details>
+<summary><b>Why client-side calculation?</b></summary>
+<br>
+
+The calculator runs directly in the browser, keeping the application lightweight and avoiding the need for a backend or database for the core calculation.
+
+</details>
+
+<br>
 
 ---
 
-##🧠 Application Architecture
+<div align="center">
 
-The project follows a lightweight modular architecture that separates the UI, configuration, and tax calculation logic.
+### 🧮 TaxClear
 
-User Input
-    │
-    ▼
-normalizeInputs()
-    │
-    ▼
-Tax Calculation Engine
-    │
-    ├── Income Calculation
-    ├── Deductions
-    ├── Tax Slabs
-    ├── Standard Deduction
-    ├── Section 87A Rebate
-    ├── Marginal Relief
-    ├── Surcharge
-    └── Health & Education Cess
-    │
-    ▼
-Regime Comparison
-    │
-    ├── Old Regime
-    └── New Regime
-    │
-    ▼
-Formatted Results
-    │
-    ▼
-User Interface
+*Compare. Understand. Choose.*
+
+[🌐 Live Calculator](https://tax-calculator-five-jet.vercel.app/)
+
+*Built with HTML, CSS & JavaScript.*
+
+</div>
