@@ -1,4 +1,3 @@
- #                           🇮🇳 TaxClear — India Income Tax Calculator
 
 <div align="center">
 
